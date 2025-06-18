@@ -1,0 +1,163 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 40px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: rgba(30, 58, 138, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 16px 16px;
+  padding: 16px 24px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #60a5fa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand .logo-icon {
+  font-size: 1.8rem;
+}
+
+/* Back button */
+.back-btn {
+  color: #60a5fa;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 120px; /* push below navbar */
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #bfdbfe;
+}
+
+/* Cards */
+.card {
+  background-color: rgba(37, 99, 235, 0.25);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  transform: translateY(-4px);
+}
+
+/* Labels */
+.label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #bfdbfe;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Contact List */
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.contact-list li {
+  margin-bottom: 1.5rem;
+}
+
+.contact-list a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #60a5fa;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.contact-list a i {
+  font-size: 1.6rem;
+}
+
+/* Hover effect on links */
+.contact-list a:hover {
+  color: #2563eb;
+}
+
+/* Logout button */
+.logout {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.85rem 2.25rem;
+  font-size: 1.2rem;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+  user-select: none;
+}
+
+.logout:hover {
+  background-color: #2563eb;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.75);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  padding: 20px 10px 10px;
+  user-select: none;
+}
