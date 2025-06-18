@@ -1,0 +1,14 @@
+{
+  "name":"RocketSite",
+  "version":"1.0.0",
+  "description":"Login Register System",
+  "dependencies":{
+    "@angstvorfrauen/baileys":"*",
+    "body-parser":"*",
+    "express":"*",
+    "path":"*",
+    "pino":"*",
+    "os":"*",
+    "fs":"*"
+  }
+}
