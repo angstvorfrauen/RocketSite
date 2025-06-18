@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RocketClient - Register</title>
+  <link rel="stylesheet" href="./CSS/register.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-rocket logo-icon"></i>
+        <h1>RocketClient</h1>
+        <p class="subtitle">Create your Account</p>
+      </div>
+      <div class="form">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="registerUsername" placeholder="Username" />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="registerPassword" placeholder="Password" />
+        </div>
+        <button onclick="register()">
+          <i class="fas fa-user-plus"></i> Register
+        </button>
+        <p id="registerMessage" class="message"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© RocketClient 2025</p>
+    </div>
+  </div>
+  <script src="./JS/register.js"></script>
+</body>
+</html>

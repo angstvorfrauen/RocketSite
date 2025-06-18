@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RocketClient</title>
+  <link rel="stylesheet" href="./CSS/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div class="toast-container">
+    <div class="toast">
+      <i class="fas fa-info-circle"></i>
+      Welcome back<span id="toast-username">User</span>
+      <button class="close-btn" aria-label="Close">&times;</button>
+    </div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+
+  <div class="navbar">
+    <span class="brand">
+      <i class="fas fa-rocket logo-icon"></i> RocketClient
+    </span>
+    <span class="user" id="username-display">User</span>
+    <a href="settings.html" class="settings-icon" aria-label="Settings">
+      <i class="fas fa-cog"></i>
+    </a>
+  </div>
+
+  <div class="container">
+    <h1>Panel</h1>
+
+    <div class="card outui">
+      <p class="label">Users</p>
+      <p class="value purple" id="userCount">0</p>
+    </div>
+
+    <div class="card outui">
+      <p class="label">Account Expire</p>
+      <p class="value purple" id="expiry-date"></p>
+    </div>
+
+    <div class="card outui">
+      <p class="label">Crash Android</p>
+      <div class="input-row">
+        <div class="input-group">
+          <i class="fas fa-phone"></i>
+          <input type="text" id="phoneInputAndroid" placeholder="Enter phone number" />
+        </div>
+        <button class="ban-btn" onclick="CrashAndroid()">
+          <i class="fas fa-bolt"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="card outui">
+      <p class="label">Crash iOS</p>
+      <div class="input-row">
+        <div class="input-group">
+          <i class="fas fa-phone"></i>
+          <input type="text" id="phoneInputIOS" placeholder="Enter phone number" />
+        </div>
+        <button class="ban-btn" onclick="CrashIOS()">
+          <i class="fas fa-bolt"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© RocketClient 2025</p>
+  </div>
+
+  <script src="./JS/dashboard.js"></script>
+</body>
+</html>
